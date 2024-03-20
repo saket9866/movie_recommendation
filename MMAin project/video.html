@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="video.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pgvideo.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="color.css" />
+    <link rel="stylesheet" href="ani.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/eca99a3bbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="borderAnimation">
+      <div class="container">
+        <div class="nav-bar">
+          <ul>
+            <li><a href="home.html" style="font-weight: 900">Home</a></li>
+            <!-- <li><a href="#sct1">New Launch</a></li> -->
+            <li><a href="video2.html">most watched</a></li>
+            <li><a href="#sct3">Faq</a></li>
+            <!-- <li><a href="">sarch</a></li> -->
+          </ul>
+        </div>
+      </div>
+
+      <hr style="border: 3px solid var(--cl); margin: 10px 10px" />
+
+      <video id="myVideo" autoplay loop>
+        <source src="ast/pv2.mp4" id="mySource" type="video/mp4" />
+
+        Your browser does not support HTML5 video.
+      </video>
+      <hr style="border: 3px solid var(--cl)" />
+
+      <div class="txtvd">
+        <div class="txtVd">
+          <h1>The gardernery</h1>
+          <p>It is watched many times</p>
+          <p>it has a rating of 7.6</p>
+          <p onclick="fullScreen()" class="flbt" type="button">
+            <i class="fa-solid fa-play fa-bounce fa-lg"></i>
+          </p>
+        </div>
+      </div>
+      <!-- <button type="button" id="btnpp" onclick="playVid()">play</button> -->
+
+      <p id="btnm" type="button" class="btnm" onclick=" changeTxt()">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </p>
+      <!-- <button id="btnma" onclick="" type="button">Continue</button> -->
+      <!-- <button onclick="inVol()" type="button">+</button>
+<button onclick="deVol()" type="button">-</button> -->
+
+      <p>
+        It is a nature based scenary short view of gardernery made for project
+        purpose, this aim is not to indiacte the real nature world
+      </p>
+      <!-- <p id="mvi2" class="movies">world</p> -->
+      <p>Above refernce is made for illustration purpose only.</p>
+      <script src="video.js"></script>
+      <!-- <script src="ffetch.js"></script> -->
+
+      <div class="faqClass" id="sct3">
+        <h2>FAQ's</h2>
+        <div class="accodian">
+          <div class="question">
+            <h2>what are the releasing range of picture ?</h2>
+            <i style="font-size: 24px" class="fa icon icon">&#xf0d7;</i>
+          </div>
+          <div class="answer">
+            <p>This page has section of movies between 1980 and 2000.</p>
+          </div>
+        </div>
+        <div class="accodian">
+          <div class="question">
+            <h2>how can i watch in full screen mode?</h2>
+            <i style="font-size: 24px" class="fa icon icon">&#xf0d7;</i>
+          </div>
+          <div class="answer">
+            <p>
+              A bouncing button for full screen mode is given below movie title
+            </p>
+          </div>
+        </div>
+        <div class="accodian">
+          <div class="question">
+            <h2>What are genres of movies ?</h2>
+            <i style="font-size: 24px" class="fa icon">&#xf0d7;</i>
+          </div>
+          <div class="answer">
+            <p>It have Action ,Drama and Adventerous.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="faq.js"></script>
+  </body>
+</html>

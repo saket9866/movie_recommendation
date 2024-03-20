@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch movies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="video.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="color.css" />
+    <link rel="stylesheet" href="ani.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <script
+      src="https://kit.fontawesome.com/35a40538f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      p {
+        cursor: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="borderAnimation">
+      <div class="container">
+        <div class="nav-bar">
+          <ul>
+            <li><a href="" style="font-weight: 900">Home</a></li>
+            <li><a href="#sct1">New Launch</a></li>
+            <li><a href="video2.html">most watched</a></li>
+            <li><a href="#sct3">Faq</a></li>
+            <!-- <li><a>signup</a></li> -->
+
+            <li style="float: right">
+              <b class="obt" type="button" onclick="openForm()">Login/Signup</b>
+              <div class="form-popup" id="myForm">
+                <form class="form-container">
+                  <div class="cls-c">
+                    <span style="color: white">Login</span>
+                    <span
+                      style="color: white; cursor: pointer"
+                      onclick="closeForm()"
+                      >&#10006;</span
+                    >
+                  </div>
+
+                  <label for="email"><b>Email</b></label>
+                  <input
+                    type="text"
+                    placeholder="Enter Email"
+                    name="email"
+                    required
+                  />
+
+                  <label for="psw"><b>Password</b></label>
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    name="psw"
+                    required
+                  />
+
+                  <button type="submit" class="btn">Login</button>
+                  <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr width="10%" style="border: 4px solid var(--cl); margin: 20px 20px" />
+      <div class="ani-clas">
+        <div class="ani-Class">
+          <!-- <h1>Most Watched Movies</h1> -->
+          <p style="color: white">
+            Are you a passionate movie buff seeking a community of like-minded
+            individuals? Look no further than Cinephile's Corner, where we
+            celebrate the art of cinema in all its glory. From classic
+            masterpieces to contemporary gems, we'll take you on a journey
+            through the world of filmmaking, exploring the stories, characters,
+            and techniques that make movies so captivating.
+          </p>
+        </div>
+        <div class="Ani-class">
+          <i class="fa-solid fa-pause fa-bounce fa-2xl"></i>
+          <i class="fa-solid fa-play fa-bounce fa-2xl"></i>
+          <i class="fa-solid fa-forward fa-bounce fa-2xl"></i>
+          <i class="fa-solid fa-check fa-bounce fa-2xl"></i>
+        </div>
+      </div>
+      <hr width="10%" style="border: 4px solid var(--cl); margin: 20px 20px" />
+      <div class="prevAni">
+        <div class="newAni">
+          <div class="moveA"></div>
+          <div class="moveA"></div>
+          <div class="moveA"></div>
+          <div class="moveA"></div>
+          <div class="moveA"></div>
+        </div>
+        <div class="newAni2" style="width: 50%">
+          Stay up-to-date with the latest happenings in the film industry,
+          including casting announcements, production updates, and award season
+          buzz.. <br />
+          Delve deeper into the world of cinema with our in-depth articles on
+          various aspects of filmmaking, from directing and cinematography to
+          screenwriting and acting. <br />
+          Engage with fellow movie enthusiasts, share your opinions, and
+          discover new recommendations in our vibrant online community.
+        </div>
+      </div>
+      <hr style="border: 4px solid var(--cl); margin: 20px 20px" />
+      <!-- <div class="prevAni3">
+            <div class="newAni3">
+                <span class="spane" >M</span>
+                <span class="spana" >O</span>
+                <span  class="spanb">V</span>
+                <span class="spanc" >I</span>
+                <span class="spand" >E</span>
+            </div>
+        </div> -->
+      <div id="sct1" class="mvbg">
+        <p id="mvi1" class="movies"></p>
+      </div>
+
+      <div id="sct2" class="mvbg2">
+        <p id="mvi2" class="movies2"></p>
+      </div>
+
+      <hr style="border: 4px solid var(--cl); margin: 20px 20px" />
+      <div class="faqClass" id="sct3">
+        <h2>FAQ's</h2>
+        <div class="accodian">
+          <div class="question">
+            <h2>Where i can find rating ?</h2>
+            <i style="font-size: 24px" class="fa icon icon">&#xf0d7;</i>
+          </div>
+          <div class="answer">
+            <p>
+              you can find rating in each section of where movie block is showed
+            </p>
+          </div>
+        </div>
+        <div class="accodian">
+          <div class="question">
+            <h2>what are the releasing range of picture ?</h2>
+            <i style="font-size: 24px" class="fa icon icon">&#xf0d7;</i>
+          </div>
+          <div class="answer">
+            <p>This page has section of movies between 1980 and 2000.</p>
+          </div>
+        </div>
+        <div class="accodian">
+          <div class="question">
+            <h2>What are genres of movies ?</h2>
+            <i style="font-size: 24px" class="fa icon">&#xf0d7;</i>
+          </div>
+          <div class="answer">
+            <p>It have Action ,Drama and Adventerous</p>
+          </div>
+        </div>
+        <div class="accodian">
+          <div class="question">
+            <h2>What is this website about?</h2>
+            <i style="font-size: 24px" class="fa icon">&#xf0d7;</i>
+          </div>
+          <div class="answer">
+            <p>
+              This website is dedicated to providing comprehensive information
+              and resources related to movies.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="accodian">
+                <div class="question">
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <i style="font-size:24px" class="fa icon">&#xf0d7;</i>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum non voluptatum tempora aut autem
+                        omnis
+                        quia quae, nihil nobis eveniet?</p>
+                </div>
+            </div> -->
+      </div>
+      <hr style="border: 4px solid var(--cl); margin: 20px 20px" />
+    </div>
+    <script src="click.js"></script>
+    <script src="ffetch.js"></script>
+    <!-- <script src="ffetch2.js"></script> -->
+    <script src="faq.js"></script>
+  </body>
+</html>
